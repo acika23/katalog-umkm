@@ -2,6 +2,8 @@ import KartuProduk from "@/components/KartuProduk";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { toko } from "@/lib/toko";
 
+export const dynamic = "force-dynamic";
+
 export default async function HalamanKatalog() {
   let daftarProduk = [];
   let gagalMemuatProduk = false;
